@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+browser2api/.venv/
+browser2api_v2/
+env.bak/
+venv.bak/
+
+# Environment variables & Local Credentials
+.env
+.env.local
+.env.*.local
+*.local
+
+# Browser Profiles, Session Cookies & Auth State (DO NOT COMMIT)
+.browser2api/
+browser2api/.browser2api/
+**/user_data/
+**/chrome_profile/
+*.session
+*.cookie
+
+# Generation Outputs & Media
+output/
+browser2api/output/
+browser2api_v2/output/
+*.png
+*.jpg
+*.jpeg
+*.webp
+!assets/*.png
+!assets/*.jpg
+!browser2api/src/browser2api/gui/static/assets/*.png
+!browser2api/src/browser2api/gui/static/assets/*.jpg
+!browser2api/src/browser2api/gui/static/assets/*.svg
+
+# Tunnel logs & executables
+tunnel.log
+cloudflared
+cloudflared.exe
+*.log
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# IDE & Editor caches
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/

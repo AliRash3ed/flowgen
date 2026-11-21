@@ -1,0 +1,14 @@
+services:
+  flowgen:
+    build: .
+    container_name: flowgen_studio
+    restart: unless-stopped
+    ports:
+      - "8787:8787"
+    environment:
+      - FLOWGEN_API_KEY=${FLOWGEN_API_KEY:-fg_live_production_secret}
+      - FLOWGEN_PORT=8787
+      - FLOWGEN_WORKERS=2
+    volumes:
+      - ./output:/app/output
+      - ./data:/app/data
